@@ -1,0 +1,27 @@
+---
+title: "Creating your own ggplot2 theme"
+author: "Paramjot Singh"
+date: "February 3, 2018"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE, tidy = TRUE)
+library(ggplot2)
+
+```
+# Introduction
+This post introduces simple steps on how to create your own ggplot2 theme. Of course, it will not go into details of changing all the aspects. Instead, it will highlight the process using few useful elements.
+
+Theme is basically a set of pre-defined(default) values for elements that make up a plot in ggplot2 library. Major elements are:
+
+- Panel, the outermost area used by a plot. Think of this as let's say your A4 sheet on which you want to draw a plot.
+- Plot, this is the plotting area. This is defined by a rectangle inside the panel.
+- Legend, another rectangle defining the plot legend. This can be anywhere in the panel, inside or outside of the plot.
+- x-axis
+- y-axis
+- Strip, I don't know what this is, yet!
+
